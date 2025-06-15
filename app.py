@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/test", methods=["GET"])
 def test():
-    print("hello")
+    print("hello", flush=True)
     return "Check console", 200
 
 if __name__ == "__main__":
